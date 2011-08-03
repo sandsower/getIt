@@ -1,7 +1,7 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+$this->pageTitle=Yii::app()->name . ' - Contactanos';
 $this->breadcrumbs=array(
-	'Contact',
+	'Contactanos',
 );
 ?>
 
@@ -16,7 +16,7 @@ $this->breadcrumbs=array(
 <?php else: ?>
 
 <p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+Si tiene preguntas al respecto, no dude en llenar la forma para contactarnos. Gracias.
 </p>
 
 <div class="form">
@@ -64,8 +64,8 @@ If you have business inquiries or other questions, please fill out the following
 		<?php $this->widget('CCaptcha'); ?>
 		<?php echo $form->textField($model,'verifyCode'); ?>
 		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
+		<div class="hint">Por favor ingrese las letras como se muestran en la parte superior.
+		<br/>No se reconoce entre may&uacute;sculas y min&uacute;sculas.</div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>
